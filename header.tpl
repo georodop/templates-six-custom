@@ -9,7 +9,7 @@
     {include file="$template/includes/head.tpl"}
 
     {$headoutput}
-
+	<link rel="stylesheet" id="et-gf-roboto-css" href="http://fonts.googleapis.com/css?family=Roboto:400,100,100italic,300,300italic,400italic,500,500italic,700,700italic,900,900italic&amp;subset=latin,cyrillic-ext,latin-ext,cyrillic,greek-ext,greek,vietnamese" type="text/css" media="all">
 </head>
 <body>
 
@@ -93,7 +93,7 @@
 
         </div>
 
-        <a href="{$WEB_ROOT}/index.php"><img src="{$WEB_ROOT}/templates/{$template}/img/logo.png" alt="{$companyname}" /></a>
+        <a href="http://www.ibs.gr/"><img src="{$WEB_ROOT}/templates/{$template}/img/iBS-logo.png" alt="{$companyname}" /></a>
 
     </div>
 </section>
@@ -145,10 +145,10 @@
                                 <input type="text" class="form-control" name="domain" placeholder="{$LANG.exampledomain}" />
                                 <span class="input-group-btn">
                                     {if $registerdomainenabled}
-                                        <input type="submit" class="btn btn-warning" value="{$LANG.search}" />
+                                        <input type="submit" class="btn btn-info" value="{$LANG.search}" />
                                     {/if}
                                     {if $transferdomainenabled}
-                                        <input type="submit" name="transfer" class="btn btn-info" value="{$LANG.domainstransfer}" />
+                                        <input type="submit" name="transfer" class="btn btn-primary" value="{$LANG.domainstransfer}" />
                                     {/if}
                                 </span>
                             </div>

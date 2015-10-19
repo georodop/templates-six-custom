@@ -54,7 +54,7 @@ section#main-content {
 
 section#footer p {
     margin: 25px 0 0 0;
-    border-top: 20px solid #006687;
+    border-top: 20px solid #5B9FDB;
     line-height: 40px;
     color: #666;
     font-size: 0.7em;
@@ -224,7 +224,7 @@ i.icon-rss {
  */
 
 section#main-menu {
-    background-color: #006687;
+    background-color: #5B9FDB;
 }
 
 /**
@@ -236,7 +236,7 @@ section#main-menu {
 section#home-banner {
     margin: 0;
     padding: 50px 0 60px;
-    background-color: #2E363F;
+    background-color: #1A4266;
     color: #fff;
 }
 
@@ -265,7 +265,7 @@ section#home-banner h2 {
 
 .home-shortcuts {
   margin: 0;
-  background: #15A4D3;
+  background: #5B9FDB;
   color: #fff;
 }
 .home-shortcuts ul {
@@ -341,7 +341,7 @@ section#home-banner h2 {
 
 .text-domain {
     font-size: 12px;
-    color: #006687;
+    color: #5B9FDB;
 }
 
 .client-home-panels .panel > .panel-heading {
@@ -468,7 +468,7 @@ section#home-banner h2 {
     border-top: 3px solid #f0ad4e;
 }
 .panel.panel-accent-green {
-    border-top: 3px solid #5cb85c;
+    border-top: 3px solid #008777;
 }
 .panel.panel-accent-red {
     border-top: 3px solid #d9534f;
@@ -498,7 +498,7 @@ section#home-banner h2 {
     border-top: 3px solid #1abc9c;
 }
 .panel.panel-accent-emerald {
-    border-top: 3px solid #2ecc71;
+    border-top: 3px solid #008777;
 }
 .panel.panel-accent-amethyst {
     border-top: 3px solid #9b59b6;
@@ -532,13 +532,13 @@ section#home-banner h2 {
     background-color: #f0ad4e;
 }
 .bg-color-green {
-    background-color: #5cb85c;
+    background-color: #008777;
 }
 .bg-color-red {
     background-color: #d9534f;
 }
 .bg-color-blue {
-    background-color: #5bc0de;
+    background-color: #5B9FDB;
 }
 .bg-color-orange {
     background-color: #f39c12;
@@ -562,7 +562,7 @@ section#home-banner h2 {
     background-color: #1abc9c;
 }
 .bg-color-emerald {
-    background-color: #2ecc71;
+    background-color: #008777;
 }
 .bg-color-amethyst {
     background-color: #9b59b6;
@@ -583,7 +583,7 @@ section#home-banner h2 {
     background-color: #bdc3c7;
 }
 .bg-color-asbestos {
-    background-color: #7f8c8d;
+    background-color: #959387;
 }
 
 /**
@@ -654,16 +654,11 @@ div.domainresults table tr td {
 .domain-checker-container {
     margin: 20px 0;
     padding: 0;
-    background-color: #ffce44;
+    background-color: #5B9FDB;
     -moz-border-radius: 10px;
     -webkit-border-radius: 10px;
     -o-border-radius: 10px;
     border-radius: 10px;
-    background: -webkit-gradient(linear, 0% 0%, 0% 100%, from(#ffb201), to(#ffd960));
-    background: -webkit-linear-gradient(top, #ffd960, #ffb201);
-    background: -moz-linear-gradient(top, #ffd960, #ffb201);
-    background: -ms-linear-gradient(top, #ffd960, #ffb201);
-    background: -o-linear-gradient(top, #ffd960, #ffb201);
 }
 
 .domain-checker-bg {
@@ -671,7 +666,7 @@ div.domainresults table tr td {
     padding: 80px 0;
     background-repeat: no-repeat;
     background-position: 110% -5px;
-    background-image:url('../img/globe.png');
+    background-image:url('../img/iBS-globe.png');
 }
 
 @media (max-width: 992px) {
@@ -698,7 +693,7 @@ div.domainresults table tr td {
 }
 
 .domain-check-availability {
-    width: 100px;
+    width: 125px;
 }
 
 .domain-step-options {
@@ -711,7 +706,7 @@ div.domainresults table tr td {
     text-align: center;
 }
 .domain-checker-available {
-    color: #5cb85c;
+    color: #008777;
 }
 .domain-checker-unavailable {
     color: #d9534f;
@@ -831,7 +826,7 @@ div.product-details-tab-container {
 
 .dataTables_wrapper .dataTables_info {
     padding: 9px 10px;
-    background-color: #006587;
+    background-color: #5B9FDB;
     border: 0;
     border-bottom: 1px solid #fff;
     font-size: 0.9em;
@@ -1524,7 +1519,7 @@ div#twofaactivation p {
  */
 
 #popup-backdrop {
-    background-color: #2E363F;
+    background-color: #1A4266;
     padding: 15px;
     height: 100%;
 }

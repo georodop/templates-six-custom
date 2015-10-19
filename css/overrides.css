@@ -37,7 +37,7 @@ h6 {
 
 .navbar-main {
     margin-bottom: 0;
-    background-color: #006687;
+    background-color: #5B9FDB;
     border: 0;
     min-height: 38px;
     font-family: "Raleway", "Helvetica Neue", Helvetica, Arial, sans-serif;
@@ -125,7 +125,7 @@ h6 {
 }
 
 a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.active:focus {
-    background-color: #006687;
+    background-color: #5B9FDB;
 }
 
 .pagination {
@@ -134,14 +134,14 @@ a.list-group-item.active, a.list-group-item.active:hover, a.list-group-item.acti
 
 .pagination > .active > a, .pagination > .active > span, .pagination > .active > a:hover, .pagination > .active > span:hover, .pagination > .active > a:focus, .pagination > .active > span:focus {
     color: white;
-    background-color: #006687;
-    border-color: #006687;
+    background-color: #5B9FDB;
+    border-color: #5B9FDB;
 }
 
 .navbar-main .dropdown-menu > li > a:hover, .dropdown-menu > li > a:focus {
     text-decoration: none;
     color: #fff;
-    background-color: #006687;
+    background-color: #5B9FDB;
 }
 
 .label {
