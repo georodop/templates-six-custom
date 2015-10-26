@@ -137,7 +137,12 @@ body, input, textarea, select {
 }
 
 /* ----------------- */
-
+/* ----- homepage.tpl custom banners ----- */
+#homebanners img { display: block; } /* fix spacers padding issue */
+#homebanners {
+    margin-top: 20px;
+    margin-bottom: -40px;
+}
 
 
 

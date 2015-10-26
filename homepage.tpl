@@ -1,54 +1,49 @@
-{if $twitterusername}
 
-    <h2>{$LANG.twitterlatesttweets}</h2>
+<!-- iBS -->
+<table border="0" cellpadding="0" cellspacing="0" width="1146" id="homebanners" >
+<!-- fwtable fwsrc="151019 ibs.gr.fw.png" fwpage="eshop.ibs.gr" fwbase="eshop.gif" fwstyle="Generic" fwdocid = "966457483" fwnested="0" -->
+  <tr>
+   <td><img src="{$WEB_ROOT}/templates/{$template}/img/homepage/spacer.gif" width="376" height="1" border="0" alt=""></td>
+   <td><img src="{$WEB_ROOT}/templates/{$template}/img/homepage/spacer.gif" width="9" height="1" border="0" alt=""></td>
+   <td><img src="{$WEB_ROOT}/templates/{$template}/img/homepage/spacer.gif" width="375" height="1" border="0" alt=""></td>
+   <td><img src="{$WEB_ROOT}/templates/{$template}/img/homepage/spacer.gif" width="8" height="1" border="0" alt=""></td>
+   <td><img src="{$WEB_ROOT}/templates/{$template}/img/homepage/spacer.gif" width="378" height="1" border="0" alt=""></td>
+   <td><img src="{$WEB_ROOT}/templates/{$template}/img/homepage/spacer.gif" width="1" height="1" border="0" alt=""></td>
+  </tr>
 
-    <div id="twitterFeedOutput">
-        <p class="text-center"><img src="{$BASE_PATH_IMG}/loading.gif" /></p>
-    </div>
-
-    <script type="text/javascript" src="templates/{$template}/js/twitter.js"></script>
-
-{elseif $announcements}
-
-    <h2>{$LANG.news}</h2>
-
-    {foreach $announcements as $announcement}
-        {if $announcement@index < 2}
-            <div class="announcement-single">
-                <h3>
-                    <span class="label label-default">
-                        {$announcement.rawDate|date_format:"M jS"}
-                    </span>
-                    <a href="{if $seofriendlyurls}{$WEB_ROOT}/announcements/{$announcement.id}/{$announcement.urlfriendlytitle}.html{else}announcements.php?id={$announcement.id}{/if}">{$announcement.title}</a>
-                </h3>
-
-                <blockquote>
-                    <p>
-                        {if $announcement.text|strip_tags|strlen < 350}
-                            {$announcement.text}
-                        {else}
-                            {$announcement.summary}
-                            <a href="{if $seofriendlyurls}{$WEB_ROOT}/announcements/{$announcement.id}/{$announcement.urlfriendlytitle}.html{else}announcements.php?id={$announcement.id}{/if}" class="label label-warning">{$LANG.readmore} &raquo;</a>
-                        {/if}
-                    </p>
-                </blockquote>
-
-                {if $announcementsFbRecommend}
-                    <script>
-                        (function(d, s, id) {
-                            var js, fjs = d.getElementsByTagName(s)[0];
-                            if (d.getElementById(id)) {
-                                return;
-                            }
-                            js = d.createElement(s); js.id = id;
-                            js.src = "//connect.facebook.net/en_US/all.js#xfbml=1";
-                            fjs.parentNode.insertBefore(js, fjs);
-                        }(document, 'script', 'facebook-jssdk'));
-                    </script>
-                    <div class="fb-like hidden-sm hidden-xs" data-layout="standard" data-href="{$systemurl}{if $seofriendlyurls}{$WEB_ROOT}/announcements/{$announcement.id}/{$announcement.urlfriendlytitle}.html{else}announcements.php?id={$announcement.id}{/if}" data-send="true" data-width="450" data-show-faces="true" data-action="recommend"></div>
-                    <div class="fb-like hidden-lg hidden-md" data-layout="button_count" data-href="{$systemurl}{if $seofriendlyurls}{$WEB_ROOT}/announcements/{$announcement.id}/{$announcement.urlfriendlytitle}.html{else}announcements.php?id={$announcement.id}{/if}" data-send="true" data-width="450" data-show-faces="true" data-action="recommend"></div>
-                {/if}
-            </div>
-        {/if}
-    {/foreach}
-{/if}
+  <tr>
+   <td rowspan="3" colspan="3"><a href="http://www.ibs.gr/cloud-web-hosting/" target="_blank"><img name="slice1" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-1.jpg" width="760" height="375" border="0" alt="Cloud Shared Hosting"></a></td>
+   <td rowspan="6"><img name="slice2" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-2.gif" width="8" height="570" border="0" alt=""></td>
+   <td><a href="http://www.ibs.gr/panda-enterprise-antivirus-solutions/" target="_blank"><img name="slice3" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-3.jpg" width="378" height="180" border="0" alt="Panda Antivirus"></a></td>
+   <td><img src="{$WEB_ROOT}/templates/{$template}/img/homepage/spacer.gif" width="1" height="180" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img name="slice4" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-4.gif" width="378" height="8" border="0" alt=""></td>
+   <td><img src="{$WEB_ROOT}/templates/{$template}/img/homepage/spacer.gif" width="1" height="8" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td rowspan="3"><a href="http://www.ibs.gr/texnikes-ipiresies-diktion-pliroforikis/" target="_blank"><img name="slice5" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-5.jpg" width="378" height="375" border="0" alt="Τεχνική Υποστήριξη Δικτύων και Υπολογιστών"></a></td>
+   <td><img src="{$WEB_ROOT}/templates/{$template}/img/homepage/spacer.gif" width="1" height="187" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td colspan="3"><img name="slice6" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-6.gif" width="760" height="8" border="0" alt=""></td>
+   <td><img src="{$WEB_ROOT}/templates/{$template}/img/homepage/spacer.gif" width="1" height="8" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><a href="http://www.ibs.gr/" target="_blank"><img name="slice7" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-7.jpg" width="376" height="180" border="0" alt="Πώληση Εξοπλισμού Πληροφορικής"></a></td>
+   <td rowspan="3"><img name="slice8" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-8.gif" width="9" height="367" border="0" alt=""></td>
+   <td><a href="http://www.ibs.gr/" target="_blank"><img name="slice9" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-9.jpg" width="375" height="180" border="0" alt="Πώληση Φορητών - Laptop"></a></td>
+   <td><img src="{$WEB_ROOT}/templates/{$template}/img/homepage/spacer.gif" width="1" height="180" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><img name="slice10" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-10.gif" width="376" height="7" border="0" alt=""></td>
+   <td><img name="slice11" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-11.gif" width="375" height="7" border="0" alt=""></td>
+   <td><img name="slice12" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-12.gif" width="378" height="7" border="0" alt=""></td>
+   <td><img src="{$WEB_ROOT}/templates/{$template}/img/homepage/spacer.gif" width="1" height="7" border="0" alt=""></td>
+  </tr>
+  <tr>
+   <td><a href="http://eshop.ibs.gr/" target="None"><img name="slice13" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-13.jpg" width="376" height="180" border="0" alt="Ηλεκτρονικό Κατάστημα, Περιοχή Πελατών"></a></td>
+   <td colspan="3"><a href="http://www.ibs.gr/office-365-gia-epichirisis/" target="_blank"><img name="slice14" src="{$WEB_ROOT}/templates/{$template}/img/homepage/slice-14.jpg" width="761" height="180" border="0" alt="Office 365"></a></td>
+   <td><img src="{$WEB_ROOT}/templates/{$template}/img/homepage/spacer.gif" width="1" height="180" border="0" alt=""></td>
+  </tr>
+</table>
