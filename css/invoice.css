@@ -44,7 +44,6 @@ body {
 
 .invoice-container .invoice-status {
     margin: 20px 0 0 0;
-    text-transform: uppercase;
     font-size: 24px;
     font-weight: bold;
 }
