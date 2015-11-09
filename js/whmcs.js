@@ -435,3 +435,32 @@ function deleteContact(confirmQuestion, contactId)
         window.location = 'clientarea.php?action=contacts&delete=true&id=' + contactId + '&token=' + csrfToken;
     }
 }
+
+/**
+ * Responsive home page styling
+ */
+jQuery( window ).resize(function() {
+	$('.bottom_left').width($('.left_half.left').width());
+	$('.bottom_left').css({'margin-top': $('.bottom_right').height() - $('.bottom_left').height() + 5});
+if($(window).width() > 750){
+	//$('.whole_left').height($(this).parent().outerHeight());
+	var he = $('.right.upper').height() + $('.right.lower').height() + 5;
+	//var he = $('.whole_left').parent().height();
+	$('.whole_left').css({"height" : he});
+}
+else{
+	$('.whole_left').css({"height" : "auto"});
+}
+});
+$(window).load(function(){
+if($(window).width() > 750){
+	var he = $('.right.upper').height() + $('.right.lower').height() + 5;
+	//var he = $('.right_upper').height();
+	$('.whole_left').css({"height" : he});
+	alert(he);
+}
+
+$('.bottom_left').width($('.left_half.left').width());
+$('.bottom_left').css({'margin-top': $('.bottom_right').height() - $('.bottom_left').height() + 5});
+
+});
