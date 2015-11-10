@@ -457,7 +457,7 @@ if($(window).width() > 750){
 	var he = $('.right.upper').height() + $('.right.lower').height() + 5;
 	//var he = $('.right_upper').height();
 	$('.whole_left').css({"height" : he});
-	alert(he);
+	//alert(he);
 }
 
 $('.bottom_left').width($('.left_half.left').width());
