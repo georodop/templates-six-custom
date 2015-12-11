@@ -7,13 +7,13 @@ if (file_exists(ROOTDIR . '/assets/img/logo.png')) {
 } elseif (file_exists(ROOTDIR . '/assets/img/logo.jpg')) {
     $logoFilename = 'logo.jpg';
 }
-$pdf->Image(ROOTDIR . '/assets/img/' . $logoFilename, 15, 25, 75);
+$pdf->Image(ROOTDIR . '/assets/img/' . $logoFilename, 15, 25, 38);
 
 # Invoice Status
 $pdf->SetXY(0, 0);
-$pdf->SetFont($pdfFont, 'B', 28);
+$pdf->SetFont($pdfFont, 'B', 14);
 $pdf->SetTextColor(255);
-$pdf->SetLineWidth(0.75);
+$pdf->SetLineWidth(0.50);
 $pdf->StartTransform();
 $pdf->Rotate(-35, 100, 225);
 if ($status == 'Paid') {
